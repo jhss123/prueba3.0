@@ -1,0 +1,14 @@
+<h1> TOUR DE HEROES</h1>
+<!-- Paso 5.7: Agregamos un elemento <nav> y, dentro de él, un elemento de ancla que, al hacer clic, activa la navegación al HeroesComponent.-->
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <br>
+    <br>
+    <a routerLink="/heroes">Heroes</a>
+    
+  </nav>
+  <!-- Paso 5.6: reemplaza el elemento <app-heroes> con un elemento <router-outlet>.
+    El <router-outlet> le dice al enrutador dónde mostrar las vistas enrutadas.-->
+<router-outlet></router-outlet>
+<!-- Paso 4.11: Modificamos la plantilla AppComponent para mostrar el MessagesComponent generado.-->
+<app-messages></app-messages>

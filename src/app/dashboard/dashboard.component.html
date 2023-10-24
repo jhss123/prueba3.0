@@ -1,0 +1,13 @@
+<h3>Top De Heroes</h3>
+<div class="grid grid-pad">
+  <!--Paso 5.8: El repetidor *ngFor crea tantos enlaces como hay en en el arreglo heroes del componente
+  Paso 5.16: corregimos los enlaces del héroe del dashboard para navegar a través de la ruta parametrizada del dashboard.-->
+  <a *ngFor="let hero of heroes" class="col-1-4"
+  routerLink="/detail/{{hero.id}}">
+    <div class="module hero">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </a>
+</div>
+
+

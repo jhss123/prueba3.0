@@ -1,0 +1,20 @@
+<!-- Paso 3.1: El nuevo HeroDetailComponent puede mostrar _cualquier_héroe, no solo el héroe seleccionado.-->
+<div *ngIf="hero">
+  <h2>Detalles de {{hero.name | uppercase}}</h2>
+  
+  <div><span>Id: </span>{{hero.id}}</div>
+  
+  <div>
+    <label>Nombre:
+      <input [(ngModel)]="hero.name" placeholder="Nombre"/>
+    </label>
+  </div>
+
+  <div><span>Poder: </span>{{hero.Poder}}</div>
+
+
+  <div><span>Pelicula: </span>{{hero.Pelicula}}</div>
+  <!-- Paso 5.20: Agregamos un botón volver en la parte inferior de la plantilla del componente y vincúlalo al método goBack() del componente.-->
+  <button (click)="goBack()">volver atras</button>
+</div>
+

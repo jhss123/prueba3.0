@@ -1,0 +1,16 @@
+<!--Paso 3.5: Cuando el usuario hace clic en un héroe en la lista, el selectedHero cambia.-->
+<h2>Mis Heroes</h2>
+<ul class="heroes">
+
+  <!--Paso 5.16:  envolvemos la insignia y el nombre en un elemento de anclaje (<a>), y agrega un atributo routerLink al ancla que es el mismo que en la plantilla del panel-->
+  <li *ngFor="let hero of heroe" 
+  title="{{hero.Poder}} , {{hero.Pelicula}}" 
+ 
+   routerLink="/detail/{{hero.id}}">
+  <span class="badge">{{hero.id}}</span> {{hero.name}}
+
+</li>
+
+</ul>
+
+
